@@ -24,11 +24,14 @@
             width: 100%;
             text-align: center;
             margin-bottom: 20px;
+            position: relative;
+            animation: slideDown 1s ease-in-out;
         }
 
         header img {
             max-width: 200px;
             height: auto;
+            animation: pulse 2s infinite;
         }
 
         .banner {
@@ -36,6 +39,7 @@
             max-height: 150px;
             object-fit: cover;
             margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .container {
@@ -104,6 +108,26 @@
             }
             50% {
                 transform: translateY(-10px);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
             }
         }
 
