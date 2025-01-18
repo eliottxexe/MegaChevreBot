@@ -17,6 +17,25 @@
             align-items: center;
             height: 100vh;
             overflow: hidden;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
 
         .container {
@@ -107,6 +126,10 @@
     </style>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo du Bot">
+        <img class="banner" src="banner.png" alt="Bannière du Bot">
+    </header>
     <div class="container">
         <h1>Invitez Notre Bot</h1>
         <p>Cliquez sur le bouton ci-dessous pour ajouter notre bot !</p>
